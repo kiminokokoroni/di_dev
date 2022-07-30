@@ -1,11 +1,15 @@
-package di.container;
+package di.container.beanproperty;
+
+import di.container.BeanFactory;
+import di.container.DIContainerException;
+
 public class BeanPropertyWithId implements BeanProperty {
     private BeanFactory parentFactory;
     private String id;
     private Class<?> clazz;
     private String name;
     @Override
-    public String getName() {
+    public String getFieldName() {
         return name;
     }
     @Override
