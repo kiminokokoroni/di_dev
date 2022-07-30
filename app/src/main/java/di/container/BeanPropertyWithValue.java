@@ -7,9 +7,10 @@ public class BeanPropertyWithValue implements BeanProperty {
 
     private Class<?> clazz;
 
+    private String name;
     @Override
-    public String getId() {
-        return id;
+    public String getName() {
+        return name;
     }
 
     @Override
@@ -22,8 +23,8 @@ public class BeanPropertyWithValue implements BeanProperty {
         return clazz;
     }
 
-    public BeanPropertyWithValue(String id, Object value, Class<?> clazz) {
-        this.id = id;
+    public BeanPropertyWithValue(String name, Object value, Class<?> clazz) {
+        this.name = name;
         this.value = value;
         this.clazz = clazz;
     }
